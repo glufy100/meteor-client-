@@ -32,6 +32,8 @@ import meteordevelopment.meteorclient.systems.modules.render.blockesp.BlockESP;
 import meteordevelopment.meteorclient.systems.modules.render.marker.Marker;
 import meteordevelopment.meteorclient.systems.modules.world.Timer;
 import meteordevelopment.meteorclient.systems.modules.world.*;
+import meteordevelopment.meteorclient.systems.modules.build.*;
+import meteordevelopment.meteorclient.systems.modules.build.highwayborers.*;
 import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.meteorclient.utils.misc.Keybind;
 import meteordevelopment.meteorclient.utils.misc.ValueComparableMap;
@@ -77,6 +79,7 @@ public class Modules extends System<Modules> {
         initRender();
         initWorld();
         initMisc();
+        initBuild();
     }
 
     @Override
@@ -574,5 +577,24 @@ public class Modules extends System<Modules> {
         add(new SoundBlocker());
         add(new Spam());
         add(new Swarm());
+    }
+
+    private void initBuild() {
+        add(new AfkLogout());
+        add(new AutoCenter());
+        add(new AutoWalkHIG());
+        add(new AxisViewer());
+        add(new HighwayBuilderHIG());
+        add(new HighwayTools());
+        add(new HotbarManager());
+        add(new LiquidFillerHIG());
+        add(new OffhandManager());
+        add(new ScaffoldHIG());
+
+        add(new AxisBorer());
+        add(new NegNegBorer());
+        add(new NegPosBorer());
+        add(new PosNegBorer());
+        add(new PosPosBorer());
     }
 }

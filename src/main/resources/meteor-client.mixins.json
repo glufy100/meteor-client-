@@ -184,8 +184,7 @@
     "WorldBorderMixin",
     "WorldChunkMixin",
     "WorldRendererAccessor",
-    "WorldRendererMixin",
-    "YggdrasilMinecraftSessionServiceAccessor"
+    "WorldRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1
